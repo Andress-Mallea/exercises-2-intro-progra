@@ -1,11 +1,22 @@
 
 #include <cmath>
 #include <iostream>
-
+#include <string>
+#include <iomanip>
 using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
+  getline(cin, s1);
+  int s = 0;
+  int z = s1.size();
+  while(s <= z){
+      if (s1[s] == ' '){
+          cout << s << endl;
+      }
+      ++s;
+  }
+  cout << z << endl;
 }
 
 void exercise_2(string s1) {
