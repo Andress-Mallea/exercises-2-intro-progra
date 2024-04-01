@@ -7,7 +7,6 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-  getline(cin, s1);
   int s = 0;
   int z = s1.size();
   while(s <= z){
@@ -18,7 +17,7 @@ void exercise_1(string s1) {
   }
   cout << z << endl;
 }
-
+ 
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
 }
