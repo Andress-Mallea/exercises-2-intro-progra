@@ -50,7 +50,7 @@ void exercise_3(string s1) {
       }
       else{
           cout << "No cake :(" << endl;
-          break
+          break;
       }
   }
 }
