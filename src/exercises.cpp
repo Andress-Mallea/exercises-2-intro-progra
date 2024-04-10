@@ -20,6 +20,22 @@ void exercise_1(string s1) {
  
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
+  int s = 0;
+  int z = s1.size();
+  string str1 = "[";
+  while(s <= z - 1){
+      if (s1[s] == ' ' || s1[s] == '\n'){
+          str1 += ']';
+          cout << str1 << endl;
+          str1 = "[";
+      }
+      else{
+        str1 += s1[s];
+      }
+      ++s;
+  }
+  str1 += ']';
+  cout << str1 << endl;
 }
 
 void exercise_3(string s1) {
