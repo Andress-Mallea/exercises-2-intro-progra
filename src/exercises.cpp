@@ -46,7 +46,7 @@ void exercise_3(string s1) {
     while( o <= 10){
       if (s1[o] == '1'){
           cout << "Om-nom-nom :P" << endl;
-          ++o
+          ++o;
       }
       else{
           cout << "No cake :(" << endl;
