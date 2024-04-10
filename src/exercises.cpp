@@ -20,6 +20,7 @@ void exercise_1(string s1) {
  
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
+  if(s1 != ""){
   int s = 0;
   int z = s1.size();
   string str1 = "[";
@@ -36,6 +37,7 @@ void exercise_2(string s1) {
   }
   str1 += ']';
   cout << str1 << endl;
+}
 }
 
 void exercise_3(string s1) {
