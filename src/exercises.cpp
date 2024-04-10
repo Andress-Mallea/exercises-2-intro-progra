@@ -42,6 +42,17 @@ void exercise_2(string s1) {
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
+  int o = 0;
+    while( o <= 10){
+      if (s1[o] == '1'){
+          cout << "Om-nom-nom :P" << endl;
+          ++o
+      }
+      else{
+          cout << "No cake :(" << endl;
+          break
+      }
+  }
 }
 
 void exercise_4(int n) {
