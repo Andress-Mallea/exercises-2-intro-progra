@@ -94,17 +94,25 @@ void exercise_5(int n, int k) {
    string r = "";
   int o = 0;
   int a = 0;
+  int b = 1;
   while (o <= k){
       if (o >= n){
-          r += to_string(o);
+          r += to_string(b);
+          ++b;
       }
       else{
+          r += " ";
+      };
+      if (b < 10 ){
           r += " ";
       };
       if (a == 7){
           cout << r << endl;
           a = 0;
-          r = "";
+          r = " ";
+          if(b < 10){
+              r += " ";
+          }
       }
       
       r += " ";
