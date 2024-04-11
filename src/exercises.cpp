@@ -42,15 +42,29 @@ void exercise_2(string s1) {
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  cin >> s1;
-    int o = 0;
-    while( o <= 10){
-      if (s1 == "1"){
+  int o = 0;
+    int u = 0;
+    int s1_size = s1.size();
+    while( o <= s1_size){
+        if ( u == 10){
+            break;
+        };
+        if(s1_size == o){
+              break;
+          };
+        if (s1[o] < '0' && s1[o] != ' '){
+              cout << s1;
+              break;
+          };
+      if(s1[o] == '1' || s1[o] == '0'){
+         if (s1[o] == '1'){
           cout << "Om-nom-nom :P" << endl;
-      }
-      else{
+          ++u;
+         }
+         else {
           cout << "No cake :(" << endl;
-          break;
+            break;
+      }
       }
       ++o;
   }
