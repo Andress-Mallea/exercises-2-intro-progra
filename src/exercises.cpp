@@ -113,7 +113,8 @@ void exercise_5(int n, int k) {
           a = 0;
           r = "";
           if(b < 10){
-              r += " ";
+              if (a != 7){ 
+              r += " ";}
           };
       };
       if ( a < 7 && a != 0){
