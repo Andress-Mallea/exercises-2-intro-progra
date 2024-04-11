@@ -102,7 +102,6 @@ void exercise_5(int n, int k) {
       }
       else{
           r += " ";
-          cout << o << endl;
           k += 1;
       };
       if (b < 10 ){
