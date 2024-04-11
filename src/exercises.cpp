@@ -91,6 +91,26 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
+   string r = "";
+  int o = 0;
+  int a = 0;
+  while (o <= k){
+      if (o >= n){
+          r += to_string(o);
+      }
+      else{
+          r += " ";
+      };
+      if (a == 7){
+          cout << r << endl;
+          a = 0;
+          r = "";
+      }
+      
+      r += " ";
+      ++a;
+      ++o;
+  }
 }
 
 int exercise_6(int n) {
