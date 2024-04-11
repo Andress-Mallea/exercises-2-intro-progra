@@ -116,7 +116,7 @@ void exercise_5(int n, int k) {
               r += " ";
           };
       };
-      if ( a < 7){
+      if ( a < 7 && a != 0){
       r += " ";}
       ++a;
       ++o;
