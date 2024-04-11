@@ -78,7 +78,7 @@ void exercise_4(int n) {
     else if( n > 14){
       cout << "El numero es muy grande. Intentelo de nuevo" << endl;
     }
-    else if(n > 0 && n < 14){
+    else if(n >= 0 && n < 14){
       int o = 1;
       int u = 1;
       while(o <= n){
