@@ -102,6 +102,8 @@ void exercise_5(int n, int k) {
       }
       else{
           r += " ";
+          cout << o << endl;
+          k += 1;
       };
       if (b < 10 ){
           r += " ";
@@ -112,12 +114,15 @@ void exercise_5(int n, int k) {
           r = " ";
           if(b < 10){
               r += " ";
-          }
-      }
+          };
+      };
       
       r += " ";
       ++a;
       ++o;
+      if (o == k){
+          cout << r  + " "<< endl;
+      }
   }
 }
 
