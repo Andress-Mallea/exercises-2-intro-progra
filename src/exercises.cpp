@@ -164,7 +164,7 @@ void exercise_8(string s) {
   int ss = s.size();
   if(ss <= 100 ){
       int a=0;
-      int b=0;
+      int b=1;
       string r1 = "";
       string r2 = "";
       while(a<ss){
@@ -173,9 +173,9 @@ void exercise_8(string s) {
           }
           ++a;
       }
-      while(b<ss){
-          if(s[b] != ' '){
-              r2 += s[(ss-1)-b];
+      while(b<=ss){
+          if(s[ss-b] != ' '){
+              r2 += s[ss-b];
           }
           ++b;
       }
@@ -190,6 +190,35 @@ void exercise_8(string s) {
 
 void exercise_9(string s) {
   // TODO: YOUR CODE HERE
+  int ss = s.size();
+ int a = 0;
+ int d = 0;
+ int p1; 
+ int p2 = 0;
+ while(a < ss){
+     if(s[a] == 'f'){
+         d += 1;
+         if (d <= 1){
+             p1 = a;
+         }
+     }
+     ++a;
+ }
+ if(d>1){
+    int b = p1 +1;
+    while(b < ss){
+        if(s[b] == 'f'){
+            cout << b << endl;
+        }
+        ++b;
+    }
+ }
+ else if (d == 1){
+     cout << "-1" << endl;
+ }
+ else if (d<1){
+     cout << "-2" << endl;
+ }
 }
 
 int exercise_10(int a, int b) {
