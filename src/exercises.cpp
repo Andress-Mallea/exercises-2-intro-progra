@@ -129,6 +129,18 @@ void exercise_5(int n, int k) {
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
+  int exercise_6(int n) {
+  // TODO: YOUR CODE HERE
+  string nss = to_string(n);
+  int ns = nss.size();
+  int b = 0;
+  int a = 0;
+  while (b < ns){
+    a += nss[b] - '0';
+    ++b;
+  }
+  return a;
+}
   return 0;
 }
 
