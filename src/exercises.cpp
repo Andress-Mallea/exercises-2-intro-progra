@@ -150,7 +150,7 @@ void exercise_7(int n) {
   // TODO: YOUR CODE HERE
   int a= 1;
   double r = 0;
-  double r2;
+  double r2 = 0;
   while (a <= n){
       double r1 = pow(-1, a+1);
       r2 += r1/a;
@@ -161,6 +161,31 @@ void exercise_7(int n) {
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
+  int ss = s.size();
+  if(ss <= 100 ){
+      int a=0;
+      int b=0;
+      string r1 = "";
+      string r2 = "";
+      while(a<ss){
+          if(s[a] != ' '){
+              r1 += s[a];
+          }
+          ++a;
+      }
+      while(b<ss){
+          if(s[b] != ' '){
+              r2 += s[(ss-1)-b];
+          }
+          ++b;
+      }
+      if ( r1 == r2){
+          cout << "YES" << endl;
+      }
+      else{
+          cout << "NO" << endl;
+      }
+  }
 }
 
 void exercise_9(string s) {
