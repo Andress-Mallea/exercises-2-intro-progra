@@ -134,14 +134,29 @@ int exercise_6(int n) {
   int b = 0;
   int a = 0;
   while (b < ns){
-    a += nss[b] - '0';
+    if(nss[b] != '-'){
+         a += nss[b] - '0';
+    }
+    else{
+    a = a + (nss[b] -'0') + 1;
+    }
     ++b;
   }
+  cout << a << endl;
   return a;
 }
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
+  int a= 1;
+  double r = 0;
+  double r2;
+  while (a <= n){
+      double r1 = pow(-1, a+1);
+      r2 += r1/a;
+      ++a;
+  }
+  cout << r2 << endl;
 }
 
 void exercise_8(string s) {
